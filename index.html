@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naval Ravikant - How to Get Rich (without getting lucky)</title>
+    <!-- Tailwindcss v3 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#64748b',
+                        neutral: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            400: '#94a3b8',
+                            500: '#64748b',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'notion': '0 1px 2px rgba(0, 0, 0, 0.05)',
+                        'notion-hover': '0 2px 8px rgba(0, 0, 0, 0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-notion-title {
+                font-weight: 600;
+                letter-spacing: -0.02em;
+            }
+            .text-notion-heading {
+                font-weight: 600;
+                letter-spacing: -0.01em;
+            }
+            .bg-notion-hover:hover {
+                background-color: rgba(55, 53, 47, 0.08);
+            }
+            .transition-notion {
+                transition: background 100ms ease-in 0s;
+            }
+            .notion-block {
+                transition: background 10ms ease-in 0s;
+                padding: 2px 4px;
+                border-radius: 3px;
+            }
+            .notion-block:hover {
+                background-color: rgba(55, 53, 47, 0.08);
+            }
+        }
+    </style>
+</head>
+<body class="bg-neutral-50 text-neutral-800 font-sans">
+    <div class="flex flex-col md:flex-row min-h-screen">
+        <!-- Mobile Header -->
+        <div class="md:hidden flex items-center justify-between p-4 border-b border-neutral-200 bg-white">
+            <h1 class="text-xl font-bold">Naval Ravikant</h1>
+            <button id="mobile-menu-button" class="p-2 rounded-md hover:bg-neutral-100">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Sidebar -->
+        <aside id="sidebar" class="hidden md:block w-full md:w-64 lg:w-72 flex-shrink-0 border-r border-neutral-200 bg-white overflow-y-auto">
+            <div class="p-4">
+                <h1 class="text-xl font-bold mb-6">How to Get Rich</h1>
+                <nav>
+                    <ul class="space-y-1">
+                        <li>
+                            <a href="#understanding-wealth" class="block px-3 py-2 rounded-md hover:bg-neutral-100 text-sm font-medium">
+                                Understanding Wealth
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#principles-of-wealth-creation" class="block px-3 py-2 rounded-md hover:bg-neutral-100 text-sm font-medium">
+                                Principles of Wealth Creation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#essential-skills" class="block px-3 py-2 rounded-md hover:bg-neutral-100 text-sm font-medium">
+                                Essential Skills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#leverage-and-accountability" class="block px-3 py-2 rounded-md hover:bg-neutral-100 text-sm font-medium">
+                                Leverage and Accountability
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#specific-knowledge" class="block px-3 py-2 rounded-md hover:bg-neutral-100 text-sm font-medium">
+                                Specific Knowledge
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#accountability" class="block px-3 py-2 rounded-md hover:bg-neutral-100 text-sm font-medium">
+                                Accountability
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#leverage" class="block px-3 py-2 rounded-md hover:bg-neutral-100 text-sm font-medium">
+                                Leverage
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#types-of-leverage" class="block px-3 py-2 rounded-md hover:bg-neutral-100 text-sm font-medium">
+                                Types of Leverage
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#judgment-and-learning" class="block px-3 py-2 rounded-md hover:bg-neutral-100 text-sm font-medium">
+                                Judgment and Learning
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#work-ethic-and-focus" class="block px-3 py-2 rounded-md hover:bg-neutral-100 text-sm font-medium">
+                                Work Ethic and Focus
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#final-thoughts" class="block px-3 py-2 rounded-md hover:bg-neutral-100 text-sm font-medium">
+                                Final Thoughts
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 max-w-3xl mx-auto px-4 py-8 md:py-12 overflow-y-auto">
+            <article class="prose prose-lg max-w-none">
+                <header class="mb-12">
+                    <h1 class="text-3xl md:text-4xl font-bold text-notion-title mb-2">Naval Ravikant</h1>
+                    <h2 class="text-xl md:text-2xl text-neutral-600 font-medium">How to Get Rich (without getting lucky)</h2>
+                </header>
+
+                <section id="understanding-wealth" class="mb-10">
+                    <h2 class="text-2xl font-bold text-notion-heading mb-4">Understanding Wealth</h2>
+                    <ul class="list-disc pl-6 space-y-4">
+                        <li class="notion-block">
+                            <p class="font-medium">Seek wealth, not money or status.</p>
+                            <ul class="list-disc pl-6 mt-2 space-y-1">
+                                <li class="notion-block">Wealth is having assets that earn while you sleep.</li>
+                                <li class="notion-block">Money is how we transfer time and wealth.</li>
+                                <li class="notion-block">Status is your place in the social hierarchy.</li>
+                            </ul>
+                        </li>
+                        <li class="notion-block">Understand that ethical wealth creation is possible. If you secretly despise wealth, it will elude you.</li>
+                        <li class="notion-block">Ignore people playing status games. They gain status by attacking people playing wealth creation games.</li>
+                    </ul>
+                </section>
+
+                <section id="principles-of-wealth-creation" class="mb-10">
+                    <h2 class="text-2xl font-bold text-notion-heading mb-4">Principles of Wealth Creation</h2>
+                    <ul class="list-disc pl-6 space-y-4">
+                        <li class="notion-block">You're not going to get rich renting out your time. You must own equity - a piece of a business - to gain your financial freedom. <span class="text-neutral-500 text-sm">(获取股权)</span></li>
+                        <li class="notion-block">You will get rich by giving society what it wants but does not yet know how to get. At scale.</li>
+                        <li class="notion-block">Pick an industry where you can play long term games with long term people.</li>
+                        <li class="notion-block">The Internet has massively broadened the possible space of careers. Most people haven't figured this out yet.</li>
+                        <li class="notion-block">Play iterated games. All the returns in life, whether in wealth, relationships, or knowledge, come from compound interest.</li>
+                        <li class="notion-block">Pick business partners with high intelligence, energy, and, above all, integrity.</li>
+                        <li class="notion-block">Don't partner with cynics and pessimists. Their beliefs are self-fulfilling. <span class="text-neutral-500 text-sm">(不要与愤世嫉俗者和悲观主义者合作。他们的信仰是自我实现的)</span></li>
+                    </ul>
+                </section>
+
+                <section id="essential-skills" class="mb-10">
+                    <h2 class="text-2xl font-bold text-notion-heading mb-4">Essential Skills</h2>
+                    <ol class="list-decimal pl-6 space-y-2">
+                        <li class="notion-block">Learn to sell.</li>
+                        <li class="notion-block">
+                            Learn to build.
+                            <ul class="list-disc pl-6 mt-2">
+                                <li class="notion-block">If you can do both, you will be unstoppable.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </section>
+
+                <section id="leverage-and-accountability" class="mb-10">
+                    <h2 class="text-2xl font-bold text-notion-heading mb-4">Leverage and Accountability</h2>
+                    <p class="notion-block">Arm yourself with specific knowledge, accountability, and leverage.</p>
+                </section>
+
+                <section id="specific-knowledge" class="mb-10">
+                    <h2 class="text-2xl font-bold text-notion-heading mb-4">Specific Knowledge</h2>
+                    <ul class="list-disc pl-6 space-y-4">
+                        <li class="notion-block">Specific knowledge is knowledge that you cannot be trained for. If society can train you, it can train someone else, and replace you.</li>
+                        <li class="notion-block">Specific knowledge is found by pursuing your genuine curiosity and passion rather than whatever is hot right now.</li>
+                        <li class="notion-block">Building specific knowledge will feel like play to you but will look like work to others.</li>
+                        <li class="notion-block">When specific knowledge is taught, it's through apprenticeships, not schools.</li>
+                        <li class="notion-block">Specific knowledge is often highly technical or creative. It cannot be outsourced or automated.</li>
+                    </ul>
+                </section>
+
+                <section id="accountability" class="mb-10">
+                    <h2 class="text-2xl font-bold text-notion-heading mb-4">Accountability</h2>
+                    <ul class="list-disc pl-6 space-y-4">
+                        <li class="notion-block">Embrace accountability, and take business risks under your own name. Society will reward you with responsibility, equity, and leverage.</li>
+                        <li class="notion-block">The most accountable people have singular, public, and risky brands: Oprah, Trump, Kanye, Elon.</li>
+                    </ul>
+                </section>
+
+                <section id="leverage" class="mb-10">
+                    <h2 class="text-2xl font-bold text-notion-heading mb-4">Leverage</h2>
+                    <blockquote class="border-l-4 border-neutral-300 pl-4 italic mb-4">
+                        "Give me a lever long enough, and a place to stand, and I will move the earth."
+                    </blockquote>
+                    <p class="text-neutral-600 mb-4">- Archimedes <span class="text-neutral-500 text-sm">("给我一个足够长的杠杆，一个站立的地方，我就会移动地球。" -阿基米德)</span></p>
+                    <p class="notion-block">Fortunes require leverage. Business leverage comes from capital, people, and products with no marginal cost of replication (code and media).</p>
+                </section>
+
+                <section id="types-of-leverage" class="mb-10">
+                    <h2 class="text-2xl font-bold text-notion-heading mb-4">Types of Leverage</h2>
+                    <ul class="list-disc pl-6 space-y-4">
+                        <li class="notion-block">
+                            <span class="font-medium">Capital:</span> Money. To raise money, apply your specific knowledge, with accountability, and show resulting good judgment.
+                        </li>
+                        <li class="notion-block">
+                            <span class="font-medium">Labor:</span> People working for you. It's the oldest and most fought-over form of leverage. Labor leverage will impress your parents, but don't waste your life chasing it.
+                        </li>
+                        <li class="notion-block">
+                            <span class="font-medium">Permissioned Leverage:</span> Capital and labor. Everyone is chasing capital, but someone has to give it to you. Everyone is trying to lead, but someone has to follow you.
+                        </li>
+                        <li class="notion-block">
+                            <span class="font-medium">Permissionless Leverage:</span> Code and media. They're the leverage behind the newly rich. You can create software and media that works for you while you sleep.
+                            <ul class="list-disc pl-6 mt-2 space-y-1">
+                                <li class="notion-block">An army of robots is freely available - it's just packed in data centers for heat and space efficiency. Use it.</li>
+                                <li class="notion-block">If you can't code, write books and blogs, record videos and podcasts.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section id="judgment-and-learning" class="mb-10">
+                    <h2 class="text-2xl font-bold text-notion-heading mb-4">Judgment and Learning</h2>
+                    <ul class="list-disc pl-6 space-y-4">
+                        <li class="notion-block">Leverage is a force multiplier for your judgment.</li>
+                        <li class="notion-block">Judgment requires experience, but can be built faster by learning foundational skills.</li>
+                        <li class="notion-block">There is no skill called "business." Avoid business magazines and business classes.</li>
+                        <li class="notion-block">Study microeconomics, game theory, psychology, persuasion, ethics, mathematics, and computers.</li>
+                        <li class="notion-block">Reading is faster than listening. Doing is faster than watching.</li>
+                    </ul>
+                </section>
+
+                <section id="work-ethic-and-focus" class="mb-10">
+                    <h2 class="text-2xl font-bold text-notion-heading mb-4">Work Ethic and Focus</h2>
+                    <ul class="list-disc pl-6 space-y-4">
+                        <li class="notion-block">You should be too busy to "do coffee," while still keeping an uncluttered calendar.</li>
+                        <li class="notion-block">Set and enforce an aspirational personal hourly rate. If fixing a problem will save less than your hourly rate, ignore it. If outsourcing a task will cost less than your hourly rate, outsource it.</li>
+                        <li class="notion-block">Work as hard as you can. Even though who you work with and what you work on are more important than how hard you work.</li>
+                        <li class="notion-block">Become the best in the world at what you do. Keep redefining what you do until this is true.</li>
+                    </ul>
+                </section>
+
+                <section id="final-thoughts" class="mb-10">
+                    <h2 class="text-2xl font-bold text-notion-heading mb-4">Final Thoughts</h2>
+                    <ul class="list-disc pl-6 space-y-4">
+                        <li class="notion-block">There are no get rich quick schemes. That's just someone else getting rich off you.</li>
+                        <li class="notion-block">Apply specific knowledge, with leverage, and eventually you will get what you deserve.</li>
+                        <li class="notion-block">When you're finally wealthy, you'll realize that it wasn't what you were seeking in the first place. But that's for another day.</li>
+                    </ul>
+                </section>
+            </article>
+        </main>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('hidden');
+            sidebar.classList.toggle('fixed');
+            sidebar.classList.toggle('inset-0');
+            sidebar.classList.toggle('z-50');
+            sidebar.classList.toggle('w-full');
+            sidebar.classList.toggle('h-full');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#sidebar a').forEach(link => {
+            link.addEventListener('click', function() {
+                const sidebar = document.getElementById('sidebar');
+                if (window.innerWidth < 768) {
+                    sidebar.classList.add('hidden');
+                    sidebar.classList.remove('fixed', 'inset-0', 'z-50', 'w-full', 'h-full');
+                }
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Highlight active section in sidebar
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const sidebarLinks = document.querySelectorAll('#sidebar a');
+            
+            let currentSectionId = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (window.scrollY >= (sectionTop - 100)) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+            
+            sidebarLinks.forEach(link => {
+                link.classList.remove('bg-neutral-100', 'text-primary');
+                
+                if (link.getAttribute('href') === `#${currentSectionId}`) {
+                    link.classList.add('bg-neutral-100', 'text-primary');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
